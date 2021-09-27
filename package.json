@@ -1,0 +1,23 @@
+{
+  "name": "app-consola",
+  "version": "1.0.0",
+  "description": "Aplicación de consola interactiva - Tareas por hacer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aletiscornia/app-consola.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aletiscornia/app-consola/issues"
+  },
+  "homepage": "https://github.com/aletiscornia/app-consola#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

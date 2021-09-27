@@ -6,8 +6,8 @@ const mostrarMenu = () => {
 
         console.clear();
         console.log('======================'.green);
-        console.log('======================\n'.green);
         console.log('Seleccione una opcion:'.green);
+        console.log('======================\n'.green);
 
         console.log(`${'1'.green}. Crear una tarea`);
         console.log(`${'2'.green}. Listar tareas`);
@@ -33,16 +33,22 @@ const mostrarMenu = () => {
 }
 
 const pausa = () => {
-    const readline = require('readline').createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
+    
+    return new Promise(resolve => {
 
-    readline.question(`\nPrecione ${'ENTER'.green} para continuar\n`, (opt) => {
-       
-        readline.close();
+        const readline = require('readline').createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+    
+        readline.question(`\nPrecione ${'ENTER'.green} para continuar\n`, (opt) => {
+           
+            readline.close();
+            resolve();
+        })
 
     })
+    
 }
 
 module.exports = {

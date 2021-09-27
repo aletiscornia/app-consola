@@ -14,10 +14,11 @@ const main = async() => {
     do {
         
         opt = await mostrarMenu();  
-        console.log({opt});
-        await pausa();
+        console.log(opt);
+        
+        if(opt!== '0' ) await pausa();
 
-    } while ( opt ==! '0' );
+    } while ( opt !== '0' );
 
     //pausa();
 }

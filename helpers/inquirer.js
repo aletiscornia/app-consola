@@ -4,7 +4,7 @@ require ('colors');
 const preguntas = [
     {
         type: 'list',
-        name: 'option',
+        name: 'opt',
         message: 'Que decea hacer?',
         choices: [
             {
@@ -47,9 +47,9 @@ const inquirerMenu = async() => {
     console.log('Seleccione una opcion:'.green);
     console.log('======================\n'.green);
     
-    const {opcion} = await inquirer.prompt(preguntas);
+    const { opt } = await inquirer.prompt(preguntas);
     
-    return opcion;
+    return opt;
     
 }
 
@@ -59,9 +59,10 @@ const pausa = async() => {
     const question = [{
         type: 'input',
         name: 'enter',
-        message: `\nPrecione ${'ENTER'.green} para continuar\n`,
+        message: `Precione ${'ENTER'.green} para continuar`,
     }]
 
+    console.log('\n')
     await inquirer.prompt(question);
 }
 

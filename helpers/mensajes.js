@@ -1,3 +1,5 @@
+const { resolve } = require('path');
+
 require('colors');
 
 const mostrarMenu = () => {
@@ -33,8 +35,8 @@ const mostrarMenu = () => {
 }
 
 const pausa = () => {
-    
-    return new Promise(resolve => {
+
+    return new Promise(reolve =>{
 
         const readline = require('readline').createInterface({
             input: process.stdin,
@@ -42,12 +44,11 @@ const pausa = () => {
         });
     
         readline.question(`\nPrecione ${'ENTER'.green} para continuar\n`, (opt) => {
-           
             readline.close();
             resolve();
+    
         })
-
-    })
+    });
     
 }
 

@@ -20,12 +20,7 @@ const main = async() => {
          await pausa();
 
     } while ( opt !== '0' );
-
-<<<<<<< HEAD
-     
-=======
-    
->>>>>>> 5e5aaddc324029f2fbe1dde917dd329f315ba5b3
+   
 }
 
 main();

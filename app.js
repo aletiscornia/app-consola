@@ -1,5 +1,6 @@
 require('colors');
 
+const { guardarDB } = require('./helpers/guardarArchivo');
 const { inquirerMenu, pausa, leerImput } = require('./helpers/inquirer');
 const Tareas = require('./models/tareas');
 
@@ -26,6 +27,10 @@ const main = async() => {
                 console.log(tareas.listadoArr);
             break;
         }
+
+        // guardarDB( tareas.listadoArr );
+
+
 
          await pausa();
 
